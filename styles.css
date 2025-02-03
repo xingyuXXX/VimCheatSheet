@@ -17,7 +17,7 @@
   --color-background-visual: rgba(240, 180, 190, 0.4);
   --color-background-insert: rgba(250, 210, 190, 0.4);
   --color-background-last: rgba(210, 190, 220, 0.4);
-  --color-background-operator: rgba(230, 210, 180, 0.4);
+  --color-background-operator: rgba(180, 200, 230, 0.4);
 
   --color-border: #ddd;
 
@@ -124,28 +124,57 @@ table td:nth-child(2) {
 
 /* Multiple type gradient backgrounds */
 .type-operator.type-visual {
-  background: linear-gradient(to right, var(--color-background-operator) 0%, var(--color-background-visual) 100%);
+  background: linear-gradient(to right,
+    var(--color-background-operator) 0%,
+    var(--color-background-operator) 20%,
+    var(--color-background-visual) 80%,
+    var(--color-background-visual) 100%
+  );
 }
 
 .type-operator.type-normal {
-  background: linear-gradient(to right, var(--color-background-operator) 0%, var(--color-background-normal) 100%);
+  background: linear-gradient(to right,
+    var(--color-background-operator) 0%,
+    var(--color-background-operator) 20%,
+    var(--color-background-normal) 80%,
+    var(--color-background-normal) 100%
+  );
 }
 
 .type-operator.type-insert {
-  background: linear-gradient(to right, var(--color-background-operator) 0%, var(--color-background-insert) 100%);
+  background: linear-gradient(to right,
+    var(--color-background-operator) 0%,
+    var(--color-background-operator) 20%,
+    var(--color-background-insert) 80%,
+    var(--color-background-insert) 100%
+  );
 }
 
 .type-operator.type-last {
-  background: linear-gradient(to right, var(--color-background-operator) 0%, var(--color-background-last) 100%);
+  background: linear-gradient(to right,
+    var(--color-background-operator) 0%,
+    var(--color-background-operator) 20%,
+    var(--color-background-last) 80%,
+    var(--color-background-last) 100%
+  );
 }
 
-/* Add other combinations as needed */
 .type-visual.type-normal {
-  background: linear-gradient(to right, var(--color-background-visual) 0%, var(--color-background-normal) 100%);
+  background: linear-gradient(to right,
+    var(--color-background-visual) 0%,
+    var(--color-background-visual) 20%,
+    var(--color-background-normal) 80%,
+    var(--color-background-normal) 100%
+  );
 }
 
 .type-visual.type-insert {
-  background: linear-gradient(to right, var(--color-background-visual) 0%, var(--color-background-insert) 100%);
+  background: linear-gradient(to right,
+    var(--color-background-visual) 0%,
+    var(--color-background-visual) 20%,
+    var(--color-background-insert) 80%,
+    var(--color-background-insert) 100%
+  );
 }
 
 .unused {

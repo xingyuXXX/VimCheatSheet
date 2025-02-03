@@ -169,7 +169,7 @@
                 <td colspan="2"></td>
               </tr>
               <tr class="type-normal">
-                <td><code>^o</code> <code class="unused">^i</code></td>
+                <td><code>^o</code> <code>^i</code></td>
                 <td>jump back/forward from jump list</td>
               </tr>
 
@@ -261,6 +261,14 @@
                 <td>put from register</td>
               </tr>
 
+              <tr class="separator">
+                <td colspan="2"></td>
+              </tr>
+              <tr class="type-normal type-visual">
+                <td><code>^a</code> <code>^x</code></td>
+                <td>add/subtract a number</td>
+              </tr>
+
               <tr class="separator desc">
                 <td colspan="2">Indent</td>
               </tr>
@@ -294,11 +302,11 @@
                 <td><code>^wv</code> <code>^ws</code></td>
                 <td>split vertically/horizontally</td>
               </tr>
-              <tr class="type-normal">
+              <tr class="type-normal unused">
                 <td><code>^wc</code></td>
                 <td>close window (not close buffer)</td>
               </tr>
-              <tr class="type-normal">
+              <tr class="type-normal unused">
                 <td><code>^wq</code></td>
                 <td>quit window (close buffer)</td>
               </tr>
@@ -389,7 +397,7 @@
                 <td><code>c</code></td>
                 <td>change (delete then insert)</td>
               </tr>
-              <tr class="type-operator type-visual">
+              <tr class="type-operator type-visual unused">
                 <td><code>g~</code></td>
                 <td>toggle case</td>
               </tr>
@@ -401,7 +409,7 @@
                 <td><code>=</code></td>
                 <td>auto-indent</td>
               </tr>
-              <tr class="type-operator unused type-visual">
+              <tr class="type-operator type-visual">
                 <td><code>&gt;</code> <code>&lt;</code></td>
                 <td>shift right/left</td>
               </tr>
@@ -443,7 +451,10 @@
               </tr>
               <tr class="type-normal">
                 <td><code>q:</code></td>
-                <td>open command-line window</td>
+                <td>
+                  open command-line window <br />
+                  <code>^c</code> to close
+                </td>
               </tr>
             </tbody>
           </table>
@@ -573,8 +584,8 @@
                 </td>
               </tr>
               <tr class="type-normal">
-                <td><code>s</code></td>
-                <td>flash (闪现)</td>
+                <td><code>s</code> <code>S</code></td>
+                <td>seek/treeSitter</td>
               </tr>
             </tbody>
           </table>
